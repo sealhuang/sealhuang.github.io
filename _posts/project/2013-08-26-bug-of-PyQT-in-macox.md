@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 记录 PyQt 的 QMainWindow 在Mac OSX 中的一个 bug
-category: technique
+category: project
 description: PyQt开发中问题之一。
 ---
 

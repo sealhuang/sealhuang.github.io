@@ -2,7 +2,7 @@
 layout: post
 title: 非参 permutation test 中需要注意的问题
 category: technique
-description: 记录自己在使用非参 permutation test 时遇到的问题和例子。
+description: 在使用非参 permutation test 时遇到的问题和例子。
 ---
 
 作为一种经典的非参检验方法，permutation test以其不依赖特定的总体分布，得到了广泛应用。其基本原理就是将数据样本根据某个标准（依赖于假设）随机打乱，将其设为零分布，再计算数据未打乱时的检验指标，将其放入“零分布”中查看其所在位置，看有多少“随机样本”的检验指标值大于真实指标，并用它们的数量除以数据打乱的总次数，得到p-value进行推断。
