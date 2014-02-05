@@ -11,7 +11,7 @@ description: Linux 系统配置。
 
     python setup.py install
 
-即可轻松搞定。然而 Numpy 和 [Scipy][scipy_link] 所依赖的 [ATLAS][atlas_link]（Automatically Tuned Linear AlgebraSoftware）和[LAPACK][lapack_link]（Linear AlgebraPACKage）两个库的安装则稍显复杂。查了很多资料，发现还是人家自家网站上的说明比较靠谱（链接[在此][install_link]），写的很详细，感兴趣的同学可以参考下。
+即可轻松搞定。然而 Numpy 和 [Scipy][scipy_link] 所依赖的 [ATLAS][atlas_link]（Automatically Tuned Linear AlgebraSoftware）和 [LAPACK][lapack_link]（Linear AlgebraPACKage）两个库的安装则稍显复杂。查了很多资料，发现还是人家自家网站上的说明比较靠谱（链接[在此][install_link]），写的很详细，感兴趣的同学可以参考下。
 
 [scipy_link]: http://www.scipy.org/SciPy "home of Scipy"
 [atlas_link]: http://math-atlas.sourceforge.net/ "home of ATLAS"
