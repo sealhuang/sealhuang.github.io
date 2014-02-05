@@ -19,7 +19,5 @@ description: Linux 系统管理常见问题之一。
 
 - 首先重启系统，之后在 Grub 处修改启动配置，在 kernel 那一行最后面加一个 Single，之后启动系统。
 - 之后进入系统，还会有之前的错误，在这里输入root密码，运行命令
-
     mount -n -o remount
-
 - 再然后就可以顺利的修改 fstab，之后重启，正常进入系统。
