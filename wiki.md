@@ -3,199 +3,6 @@ layout: page
 title: Wiki
 ---
 <div class="wiki">
-    <h2>Javascript</h2>
-    <ul class="hide">
-        <li><a href="http://jqfundamentals.com/book/index.html">jQuery Fundamentals</a> - jQuery 入门教程。</li>
-        <li><a href="http://www.cn-cuckoo.com/deconstructed/index.html">JavaScript库 代码解构</a> - 将JavaScript流行框架源代码条分缕析展现出来</li>
-        <li><a href="http://www.cnblogs.com/TomXu/archive/2011/12/15/2288411.html" title="汤姆大叔的深入理解Javascript系列">深入理解Javascript系列</a></li>
-        <li><a href="http://www.cnblogs.com/TomXu/archive/2011/12/15/2288411.html" title="&lt;Script&gt;的defer和async的区别">&lt;Script&gt;的defer和async的区别</a></li>
-        <li><a href="http://coolshell.cn/articles/6441.html" title="Javascript面向对象基础">Javascript面向对象基础</a></li>
-        <li><a href="http://github.com/addyosmani/backbone-fundamentals" title="Backbone.js基础介绍">Backbone.js基础</a></li>
-        <li><a href="http://unixpapa.com/js/key.html">JavaScript Madness: Keyboard Events</a></li>
-        <li><a href="http://dailyjs.com/tags.html#frameworks">Let's Make Frameworks</a></li>
-        <li>国内公司JS框架：<a href="http://kissyui.com/">Kissy - Taobao</a> | <a href="http://arale.alipay.net/">Arale - Alipay</a> | <a href="http://tangram.baidu.com/">Tangram - Baidu</a></li>
-        <li><a href="http://js1k.com/">JS1K, 1k Javascript contest</a></li>
-        <li><a href="http://www.json.org/">JSON Home Page</a></li>
-        <li><a href="http://code.google.com/p/molokoloco-coding-project/wiki/JavascriptBase">NB JS Wiki(CSS、PHP、jQuery、Linux)</a></li>
-        <li><a href="http://birdshome.cnblogs.com/archive/2006/05/28/IE_MemoryLeak.html">理解并解决IE的内存泄漏方式</a> <a href="http://birdshome.cnblogs.com/archive/2006/06/01/ClosureReferences.html">2</a> <a href="http://birdshome.cnblogs.com/archive/2006/06/17/Cross_Page_Leaks.html">3</a> <a href="http://birdshome.cnblogs.com/archive/2006/06/30/Pseudo_Leaks.html">4</a></li>
-        <li><a href="http://msdn.microsoft.com/en-us/library/bb250448.aspx">Understanding and Solving Internet Explorer Leak Patterns</a></li>
-        <li><a href="http://www.cnblogs.com/rubylouvre/archive/2010/01/05/1639541.html" title="Javscript Bind函数">Javscript Bind函数</a></li>
-        <li><a href="http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/" title="Javscript设计模式">Javscript设计模式</a></li>
-        <li>JSON工具：</li>
-        <ul>
-            <li><a href="http://www.jsonlint.com/">JSONLint</a> - The JSON Validator</li>
-            <li><a href="http://undefined.org/python/#simplejson">SimpleJSON</a> - Python Stuff</li>
-            <li><a href="http://jsonformatter.curiousconcept.com/">JSON Formatter (&amp; Validator!)</a></li>
-            <li><a href="http://www.raboof.com/Projects/TidyJson/">Tidy JSON - JSON Pretty Printer/Colorer</a> - C#(.NET)</li>
-            <li><a href="http://www.cerny-online.com/cerny.js/demos/json-pretty-printing">Cerny.js - JSON Pretty Printing Demo</a></li>
-            <li><a href="http://github.com/nicksieger/jsonpretty">jsonpretty(ruby)</a></li>
-        </ul>
-        <li>Vim Json：</li>
-        <ul>
-            <li><a href="http://lumberjaph.net/perl/2009/02/17/tidify-a-json-in-vim.html">tidify a json in Vim</a></li>
-            <li><a href="http://www.vim.org/scripts/script.php?script_id=1945">JSON.vim</a> - syntax</li>
-            <li><a href="http://visibletrap.blogspot.com/2010/05/vim-how-to-format-and-syntax-highlight.html">VIM - How to format and syntax highlight JSON file</a></li>
-            <li><a href="http://bradmontgomery.blogspot.com/2010/01/add-json-syntax-highlighting-in-vim-on.html">Add JSON syntax highlighting in Vim on OS X</a></li>
-        </ul>
-        <li>JSONP：</li>
-        <ul>
-            <li><a href="http://www.ibm.com/developerworks/cn/web/wa-aj-jsonp1/index.html">使用 JSONP 实现跨域通信，第 1 部分: 结合 JSONP 和 jQuery 快速构建强大的 mashup</a> <a href="http://www.ibm.com/developerworks/cn/web/wa-aj-jsonp2/index.html">第 2 部分: 使用 JSONP、jQuery 和 Yahoo! 查询语言构建 mashup</a></li>
-            <li><a href="http://www.cn-cuckoo.com/2008/09/13/the-origin-of-jsonp-262.html">JSONP的起源</a></li>
-            <li><a href="http://www.ibm.com/developerworks/cn/xml/x-mashups.html">Mashups：Web 应用程序新成员</a></li>
-        </ul>
-        <li>Javascript闭包：</li>
-        <ul>
-            <li><a href="http://zh.wikipedia.org/zh-cn/%E9%97%AD%E5%8C%85_(%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6)">闭包 (计算机科学)</a></li>
-            <li><a href="http://jibbering.com/faq/notes/closures/">Javascript Closures</a></li>
-            <li><a href="http://roshanca.com/?p=153">什么是闭包</a></li>
-            <li><a href="http://www.jibbering.com/faq/faq_notes/closures.html">Javascript Closures</a> <a href="http://www.cn-cuckoo.com/2007/08/01/understand-javascript-closures-72.html">中文</a> <a href="http://www.aspxhome.com/examples/javascript/program/483628/javascriptclosures.html">2</a></li>
-            <li><a href="http://www.ruanyifeng.com/blog/2009/08/learning_javascript_closures.html">学习Javascript闭包（Closure）</a></li>
-            <li><a href="http://www.mikkolee.com/81">作用域链 词法作用域 与 闭包（一）</a> <a href="http://www.mikkolee.com/84">（二）</a></li>
-        </ul>
-        <li>Javascript工具：</li>
-        <ul>
-            <li><a href="http://www.jslint.com/">JSLint</a></li>
-            <li><a href="http://javascriptlint.com/">JavaScript Lint</a></li>
-            <li><a href="http://github.com/rainux/jslint.vim">Fork of hallettj/jslint.vim</a></li>
-            <li><a href="http://varnow.org/?p=174">Google Closure Compiler压缩优化规则初探</a></li>
-            <li><a href="http://www.phpblog.cn/archives/242">使用Google 的Closure Compiler来压缩javascript</a></li>
-            <li><a href="http://www.cnblogs.com/JeffreyZhao/archive/2009/12/09/ikvm-google-closure-compiler.html">在项目中使用Google Closure Compiler</a></li>
-            <li><a href="http://hikejun.com/blog/?p=476&amp;cpage=1">Mac下用Closure compiler</a></li>
-            <li><a href="http://ued.sohu.com/article/611">JS 库浅析之 Google Closure</a></li>
-            <li><a href="http://www.pushiming.com/blog/2010/12/advanced-optimization-in-closure-compiler-and-more/">Closure Compiler 高级模式及更多思考</a></li>
-            <li><a href="http://www.slideshare.net/lifesinger/closure-compiler-vs-yuicompressor">Closure Compiler vs YUICompressor</a></li>
-            <li><a href="http://www.minifyjs.com/">Minify JS</a></li>
-            <li><a href="http://docs.jquery.com/QUnit">QUnit</a> <a href="http://github.com/jquery/qunit">@github</a></li>
-            <li>JsBeautify：<a href="http://jsbeautifier.org/">Online Javascript jsbeautifier</a> <a href="http://github.com/einars/js-beautify">github</a>, <a href="http://www.vim.org/scripts/script.php?script_id=2727">vimscript</a></li>
-            <li><a href="https://code.google.com/p/jsbeautifier/">js beautifier</a> - plugin for Chrome</li>
-        </ul>
-        <li>NodeJS：</li>
-        <ul>
-            <li><a href="http://nodejs.org/">nodeJS</a> - 服务器端 JavaScript 编程</li>
-            <li><a href="http://simonwillison.net/2009/Nov/23/node/">Node.js is genuinely exciting</a></li>
-            <li><a href="http://blog.csdn.net/fuadam/archive/2010/03/15/5380178.aspx">在cygwin环境下编译node.js</a></li>
-            <li><a href="http://github.com/ry/node_chat">node char</a> - 用 nodeJS 写的聊天室</li>
-            <li><a href="https://no.de/">Joyent Node</a> | <a href="http://mattn.no.de/">mattn.no.de</a></li>
-        </ul>
-    </ul>
-
-    <h2>HTML &amp; CSS</h2>
-    <ul class="hide">
-        <li><a href="http://wiki.hotoo.me/CSS-Hacks.html">CSS Hacks &amp; Expression</a></li>
-        <li><a href="http://www.digitalmediaminute.com/reference/entity/">XHTML Character Entity Reference HTML实体字符引用</a></li>
-        <li><a href="http://blog.bingo929.com/css-frameworks-15.html">精选15个国外CSS框架</a></li>
-        <li><a href="http://nicolasgallagher.com/pure-css-speech-bubbles/demo/">Pure Css Speech Bubbles</a></li>
-        <li>CSS栅格系统(Grid System)：</li>
-        <ul>
-            <li><a href="http://1kbgrid.com/">The 1Kb CSS Grid</a> - 拖放各个阈值并直接下载自动生成的CSS。</li>
-            <li><a href="http://www.spry-soft.com/grids/">Variable Grid System</a> - 可直接修改各个阈值并预览效果。</li>
-            <li><a href="http://grid.mindplay.dk">Grid Designer</a></li>
-            <li><a href="http://builder.yaml.de/">YAML Builder</a> - A tool for visual development of YAML based CSS layouts. </li>
-            <li><a href="http://960.gs/">960 Grid System</a> <a href="http://github.com/nathansmith/960-Grid-System">960-Grid-System@github</a></li>
-            <li><a href="http://ued.taobao.com/blog/2008/09/17/grid_systems/">网页的栅格系统设计</a> - 青云</li>
-            <li><a href="http://www.gracecode.com/archives/2363/">我的栅格系统</a> - 明城</li>
-            <li><a href="http://www.markboulton.co.uk/journal/comments/five-simple-steps-to-designing-grid-systems-part-1">Five simple steps to designing grid systems</a> <a href="http://www.markboulton.co.uk/journal/comments/five-simple-steps-to-designing-grid-systems-part-2">2</a> <a href="http://www.markboulton.co.uk/journal/comments/five-simple-steps-to-designing-grid-systems-part-3">3</a> <a href="http://www.markboulton.co.uk/journal/comments/five-simple-steps-to-designing-grid-systems-part-4">4</a> <a href="http://www.markboulton.co.uk/journal/comments/five-simple-steps-to-designing-grid-systems-part-5">5</a></li>
-        </ul>
-        <li>CSS疑难杂症：</li>
-        <ul>
-            <li><a href="http://www.smallni.com/haslayout-block-formatting-contexts/">HasLayout和BFC(Block Formatting Contexts)的区别完整对比</a></li>
-            <li><a href="http://rebuildpattern.com/node/44">Block Formatting Contexts的特性</a></li>
-            <li><a href="http://haslayout.net/">hasLayout.net</a></li>
-            <li><a href="http://www.satzansatz.de/cssd/onhavinglayout.html">On having layout</a> <a href="http://www.blueidea.com/tech/site/2006/3698.asp">中文版</a></li>
-            <li><a href="http://www.positioniseverything.net/explorer/expandingboxbug.html">Internet Explorer 6 and the Expanding Box Problem</a></li>
-            <li><a href="http://www.qianduan.net/universal-to-remove-floating-style.html">万能清除浮动样式</a></li>
-            <li><a href="http://ued.taobao.com/blog/2010/08/04/css-border%E4%BD%BF%E7%94%A8%E5%B0%8F%E5%88%86%E4%BA%AB/">CSS Border使用小分享</a></li>
-            <li><a href="http://www.cnblogs.com/eazon/archive/2008/07/04/1235268.html">表格樣式集錦</a></li>
-            <li><a href="http://www.zhangxinxu.com/wordpress/?p=56">复选框单选框与文字对齐问题的研究与解决</a></li>
-            <li><a href="http://www.blueidea.com/tech/web/2008/6313.asp">连续字符自动换行的解决方案</a></li>
-            <li><a href="http://www.cnblogs.com/yizuierguo/archive/2010/08/04/1792287.html">三谈Iframe自适应高度</a> | <a href="http://www.cnblogs.com/MaxIE/archive/2008/08/13/1266597.html">再谈iframe自适应高度</a></li>
-            <li><a href="http://www.qianduan.net/cross-browser-inline-block.html">跨浏览器的inline-block</a> <a href="http://blog.mozilla.com/webdev/2009/02/20/cross-browser-inline-block/">en</a></li>
-            <li><a href="http://www.planabc.net/2007/03/11/display_inline-block/">display:inline-block的深入理解</a></li>
-        </ul>
-    </ul>
-
-    <h2>HTML5 &amp; CSS3</h2>
-    <ul class="hide">
-        <li><a href="http://diveintohtml5.info/">Dive Into HTML5</a></li>
-        <li><a href="http://blog.bingo929.com/google-enjoy-html5-drag-drop-filereaderenren.html" title="给力的 Google HTML5 训练营(HTML5 Drag&amp;Drop 拖拽、FileReader实例教程)">HTML5训练营</a></li>
-        <li><a href="http://blog.bingo929.com/html5-websockets.html" title="HTML5 WebSockets 基础使用教程">HTML5 WebSockets</a></li>
-        <li><a href="http://blog.bingo929.com/html5-ie-enabling-script.html" title="让所有IE支持HTML5的解决方案">IE支持HTML5</a></li>
-        <li><a href="http://blog.bingo929.com/power-of-html5-css3-div-css.html" title="一起感受HTML5和CSS3的能量">感受HTML5&amp;CSS3</a></li>
-        <li>用JavaScript玩转计算机图形学：<a href="http://www.cnblogs.com/miloyip/archive/2010/03/29/1698953.html">(一)光线追踪入门</a> <a href="http://www.cnblogs.com/miloyip/archive/2010/04/02/1702768.html">(二)基本光源</a></li>
-        <li>Canvas：</li>
-        <ul>
-            <li><a href="http://zh.wikipedia.org/wiki/Canvas_%28HTML%E5%85%83%E7%B4%A0%29">Canvas (HTML元素)</a></li>
-            <li><a href="http://billmill.org/static/canvastutorial/index.html">Canvas Tutorial</a></li>
-            <li><a href="https://developer.mozilla.org/cn/Canvas_tutorial">Canvas 教程</a> <a href="https://developer.mozilla.org/en/Canvas_tutorial">en</a></li>
-            <li><a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html#the-canvas-element">The canvas element</a></li>
-            <li><a href="http://blog.bingo929.com/html-5-canvas-the-basics-html5.html" title="关于HTML 5 canvas 的基础教程">HTML5 Canvas</a></li>
-        </ul>
-        <li>Canvas使用教程：</li>
-        <ul>
-            <li><a href="http://jiachen.blogbus.com/logs/29567413.html">开题</a></li>
-            <li><a href="http://jiachen.blogbus.com/logs/29569584.html">基本语法</a></li>
-            <li><a href="http://jiachen.blogbus.com/logs/29596111.html">图形绘制</a></li>
-            <li><a href="http://jiachen.blogbus.com/logs/32827552.html">图片应用</a></li>
-        </ul>
-        <li>Canvas Games：</li>
-        <ul>
-            <li><a href="http://henrikfalck.com/unrealsoccer/">Unreal Soccer</a></li>
-            <li><a href="http://www.benjoffe.com/code/demos/canvascape/">Canvascape</a></li>
-            <li><a href="http://dave-webster.com/projects/index.php?page=incs/plasma_demo1">Plasma demo using the HTML Canvas element</a></li>
-            <li><a href="http://www.student.kuleuven.be/~m0216922/CG/plasma.html">Lodes Computer Graphics Tutorial</a></li>
-            <li><a href="http://alteredqualia.com/cubeout/">CubeOut</a> - 3D 俄罗斯方块</li>
-            <li><a href="http://canvasrider.com/tracks/all">自行车越野</a></li>
-            <li><a href="http://box2d-js.sourceforge.net/index2.html">Box2DJS</a></li>
-            <li><a href="http://www.effectgames.com/demos/canvascycle/?sound=1">Canvas Cycles</a></li>
-            <li><a href="http://agent8ball.com/">Agent 8 Ball</a> - 台球</li>
-        </ul>
-        <li>工具：</li>
-        <ul>
-            <li><a href="http://www.css3generator.com/">CSS3 Generator</a></li>
-            <li><a href="http://gradients.glrzad.com/">CSS3 Gradient Generator</a></li>
-            <li><a href="http://css-tricks.com/examples/ButtonMaker/">CSS3 Button Maker</a></li>
-            <li><a href="http://css3please.com/">CSS3 Please!</a> - The Cross-Browser CSS3 Rule Generator</li>
-        </ul>
-        <li>Framework：</li>
-        <ul>
-            <li><a href="http://www.jgraph.com/mxgraph.html">mxGraph - the AJAX diagramming soluting</a></li>
-            <li><a href="http://code.google.com/p/svgweb/">Scalable Vector Graphics Web Browser using Flash</a></li>
-            <li><a href="http://code.google.com/p/explorercanvas/">HTML5 Canvas for Internet Explorer</a></li>
-            <li><a href="http://code.google.com/p/svg2vml/">Library that provides support for SVG and VML with an SVG style interface</a></li>
-            <li><a href="http://www.walterzorn.com/jsgraphics/jsgraphics_e.htm">DHTML: Draw Line, Ellipse, Oval, Circle, Polyline, Plygon, Triangle, with JavaScript</a></li>
-            <li><a href="http://www.cnblogs.com/webgis8/articles/1529588.html">翻译Browser Drawing一篇:Canvas/SVG/VML Drawing Roundup</a></li>
-            <li><a href="http://github.com/mrdoob/three.js">Three.js</a></li>
-            <li><a href="http://raphaeljs.com/">Rapha?l</a> - 非常棒的跨平台 JavaScript 图形库 | <a href="http://github.com/DmitryBaranovskiy/raphael">raphael@github</a> | <a href="http://dmitry.baranovskiy.com/">blog</a></li>
-            <li><a href="http://code.google.com/p/uupaa-js-spinoff/">uupaa.js spin-off projects</a></li>
-        </ul>
-        <li>Demo：</li>
-        <ul>
-            <li><a href="http://www.alexbuga.com/v9/">Alex Buga Livingroom</a></li>
-            <li><a href="http://guciek.net/test/burn">burn-canvas-test</a> - 画图</li>
-            <li><a href="http://webdesignledger.com/inspiration/10-html5-demos-to-make-you-forget-about-flash">10 HTML5 Demos to Make You Forget About Flash</a> <a href="http://designlol.net/archives/1418">cn</a></li>
-            <li><a href="http://muro.deviantart.com/">deviantART Muro</a></li>
-            <li><a href="http://www.phoboslab.org/biolab/">Biolab Disaster</a> - Game</li>
-            <li><a href="http://labs.codecomputerlove.com/FlashVsHtml5/">乒乓球游戏：左边用Flash，右边用HTML5</a></li>
-            <li><a href="http://www.20thingsilearned.com/">20 Things I Learned About Browsers and the Web</a></li>
-            <li><a href="http://www.subcide.com/experiments/fail-whale/">Pure CSS Twitter 'Fail Whale'</a></li>
-            <li><a href="http://www.optimum7.com/css3-man/animation.html">CSS3-Man</a></li>
-            <li><a href="http://knb.im/css3/">A啦多梦告诉你浏览器对 CSS3 的支持程度</a></li>
-        </ul>
-    </ul>
-
-    <h2>前端相关</h2>
-    <ul class="hide">
-        <li><a href="http://www.w3.org/">World Wide Web Consortium</a></li>
-        <li><a href="http://www.webstandards.org/">The Web Standards Project</a></li>
-        <li><a href="http://www.w3schools.com/">W3Schools Online Web Tutorials</a></li>
-        <li><a href="http://www.google.com/support/webmasters/bin/answer.py?hl=cn&amp;answer=40132">HTTP 状态代码</a></li>
-        <li><a href="http://www.floatfly.cn/default/web-error-info.html">网页错误代码详解</a></li>
-        <li><a href="http://www.w3school.com.cn">w3school - 在线教程</a></li>
-        <li><a href="http://zh.wikipedia.org/zh-cn/REST">REST介绍</a></li>
-        <li><a href="http://aliceui.com/category/solutions/" title="Alice出品的浏览器兼容解决方案">浏览器兼容解决方案</a>(AliceUI) | <a href="http://aliceui.com/w3c-docs/" title="AliceUI出品对HTML5/CSS3的标准文档研究">W3C 标准文档</a>(AliceUI)</li>
-        <li>Microformats：<a href="http://microformats.org/wiki/Main_Page">Microformats</a> | <a href="http://www.blueidea.com/tech/web/2009/6471.asp">什么是微格式及经典实例演示</a> | <a href="http://zh.wikipedia.org/zh/%E5%BE%AE%E6%A0%BC%E5%BC%8F">微格式 - Wikipedia</a> <a href="http://en.wikipedia.org/wiki/Microformat">en</a> | <a href="http://suda.co.uk/projects/microformats/cheatsheet/">Microformats Cheat Sheat</a> | <a href="http://www.ued163.com/?p=470">微格式全功略Hcard、 hCalendar、hReview、XFN 轻松掌握</a> | <a href="http://tommyfan.com/blog/skill/microformats_hcard/">微格式 Microformats ? hCard</a> | <a href="http://www.mijia.org/blog/?p=152">使用微格式来丰富网站语义：简介</a> | <a href="http://www.ablognotlimited.com/articles/getting-semantic-with-microformats-introduction/">Getting Semantic With Microformats, Introduction</a></li>
-    </ul>
-
     <h2>Python</h2>
     <ul class="hide">
         <li><a href="http://woodpecker.org.cn/abyteofpython_cn/chinese/">简明Python教程</a></li>
@@ -230,28 +37,6 @@ title: Wiki
     <h2>开发相关</h2>
     <ul class="hide">
         <li><a href="http://markdown.tw/">MarkDown语法</a></li>
-        <li><a href="http://114.xixik.com/character/">HTML转义</a></li>
-    	<li>OAuth</li>
-        <ul>
-            <li><a href="http://oauth.net/">OAuth</a></li>
-            <li><a href="http://www.rollingcode.org/blog/f/oauth-core-1.0-final-cn.html">OAuth核心</a></li>
-            <li><a href="http://code.google.com/apis/accounts/docs/OAuth.html">OAtuh for Web Application</a></li>
-            <li><a href="https://github.com/mattn/vim-oauth">Vim-oauth</a></li>
-            <li><a href="https://github.com/mattn/webapi-vim">webapi-vim</a></li>
-            <li>OAuth在线测试：<a href="http://term.ie/oauth/example/index.php">服务端</a> | <a href="http://term.ie/oauth/example/client.php">客户端</a></li>
-        </ul>
-        <li>国内开源镜像站：<a href="http://mirrors.sohu.com/">Sohu.com</a> | <a href="http://mirrors.163.com/">163.com</a></li>
-        <li>在线IDE：<a href="http://www.coderun.com/ide/" title="Online IDE">CodeRun</a> | <a href="http://jsfiddle.net/" title="Online Editor for the Web">jsFiddle</a> | <a href="http://jsbin.com/" title="JavaScript Collaborative Debugging">JS Bin</a> | <a href="http://code.wanz.im/">小可&lt;Little Code /&gt;</a></li>
-        <li>优良的文本处理工具：SED &amp; AWK</li>
-        <ul>
-        	<li><a href="http://sed.sourceforge.net/">sed.sf.net</a> | <a href="http://en.wikipedia.org/wiki/AWK">AWK @wikipedia</a> <a href="http://zh.wikipedia.org/wiki/AWK">中文</a></li>
-            <li><a href="http://gnuwin32.sourceforge.net/packages/gawk.htm">Gawk for Windows</a> | <a href="http://gnuwin32.sourceforge.net/packages/sed.htm">Sed for Windows</a></li>
-            <li><a href="http://blog.chinaunix.net/u/13392/showart.php?id=133128">sed-非交互式文本编辑器(L.E.McMahon 著,中文翻译)</a> <a href="http://cm.bell-labs.com/7thEdMan/vol2/sed">En</a> | <a href="http://blog.chinaunix.net/u/13392/showart.php?id=134410">awk-模式扫描与处理语言(Aho,Kernighan,Weinberger著,中文翻译)(第二版)</a> <a href="http://cm.bell-labs.com/7thEdMan/vol2/awk">En</a></li>
-            <li>详解注明的AWK oneliner：<a href="http://roylez.heroku.com/2010/04/11/awk-oneliner-translation-1.html">一：空行、行号和计算</a> | <a href="http://roylez.heroku.com/2010/04/28/awk-oneliner-translation-2.html">二：文本替换</a> | <a href="http://roylez.heroku.com/2010/05/15/awk-oneliner-translation-3.html">三：选择性输出特定行</a> | <a href="http://roylez.heroku.com/2010/07/29/awk-oneliner-translation-4.html">四：定义字符串和数组</a></li>
-            <li>详解AWK oneliner原文：<a href="http://www.catonmat.net/blog/awk-one-liners-explained-part-one/">Famous Awk One-Liners Explained</a> | <a href="http://www.catonmat.net/blog/update-on-famous-awk-one-liners-explained">Update on Famous Awk One-Liners Explained: String and Array Creation</a></li>
-            <li><a href="http://panweizeng.com/archives/522">sed和awk的简单使用 - 潘魏增</a></li>
-            <li>参考书籍：<a href="http://cm.bell-labs.com/cm/cs/awkbook/">The AWK Programming Language</a> | <a href="http://oreilly.com/catalog/9780596000707/">Effective awk Programming, Third Edition</a> | <a href="http://oreilly.com/catalog/9781565922259">sed &amp; awk, Second Edition</a> | <a href="http://oreilly.com/catalog/9780596003524">sed and awk Pocket Reference, Second Edition</a></li>
-        </ul>
         <li>函数式编程：</li>
         <ul>
             <li><a href="http://en.wikipedia.org/wiki/Functional_programming">@wikipedia</a> <a href="http://zh.wikipedia.org/zh-cn/%E5%87%BD%E6%95%B8%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80">中文</a></li>
@@ -263,7 +48,6 @@ title: Wiki
             <li><a href="http://blog.csdn.net/xuejx/archive/2009/08/12/4440105.aspx">哪种语言将统治多核时代 再看函数式语言特性</a></li>
         </ul>
         <li><a href="http://www.canonical.org/~kragen/tao-of-programming.html">The Tao Of Programming</a>,<a href="http://osiris.urbanna.net/tao.html">2</a>,<a href="http://livecn.huasing.org/tao_of_programming.htm">《编程之道》</a> 文言文版 by Livecn，<a href="http://202.118.74.32/doc/Science/Computer/TaoOfProg.pdf">2</a> 白话文版 by 小赵</li>
-        <li>代码高亮：<a href="http://mihai.bazon.net/projects/javascript-syntax-highlighting-engine" title="DlHightLight代码高亮组件">DlHightLight代码高亮组件</a> | <a href="http://code.google.com/p/google-code-prettify/">Google Code Prettify</a></li>
     </ul>
 
     <h2>版本控制</h2>
@@ -321,7 +105,6 @@ title: Wiki
 
     <h2>系统相关</h2>
     <ul class="hide">
-        <li><a href="http://xbeta.info/win-run.htm" title="最绿色最高效，用win+r启动常用程序和文档">用win+r启动程序和文档</a></li>
         <li><a href="http://lamp.linux.gov.cn/Linux/LFS-6.2/index.html">Linux彻底定制指南(Linux From Scratch)</a></li>
         <li><a href="http://www.douban.com/group/topic/14530790/">服务器和架构方面的一些文章</a></li>
         <li><a href="http://www.cnblogs.com/stephen-liu74/archive/2011/12/20/2285454.html">Linux Shell常用技巧(目录)</a></li>
@@ -406,7 +189,6 @@ title: Wiki
     <h2>其他</h2>
     <ul class="hide">
     	<li><a href="http://autoproxy-gfwlist.googlecode.com/svn/trunk/gfwlist.txt">Proxy Switchy!等使用的GFW List</a></li>
-        <li>我的两段吉他即兴：<a href="http://www.tudou.com/programs/view/1txOUWlIxJw/">Spanish风格</a>&nbsp;|&nbsp;<a href="http://www.tudou.com/programs/view/4qiVvUDWqjg/">C调即兴</a></li>
     </ul>
 </div>
 <script type="text/javascript">
