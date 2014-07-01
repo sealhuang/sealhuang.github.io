@@ -14,4 +14,23 @@ description: CentOS 5.X系统默认使用的Qt版本较低，如何选择合适�
     SIP 4.15.4
     PyQt 4.10.4
 
+## 安装
+从PyQt网站上下载以上版本的PyQt和SIP，Qt可以通过yum安装。
+
+首先安装SIP。
+
+解压缩sip源码包后，进入sip目录内，运行
+
+    python configure.py
+    make
+    make install
+
+完成安装。
+
+之后，安装PyQt。解压缩源码后，进入目录内，运行
+
+    python configure.py -q /path/to/qt4/bin/qmake
+    make
+    make install
+
 
