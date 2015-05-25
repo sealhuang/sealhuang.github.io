@@ -35,7 +35,7 @@ published: true
 
 这里我们把这个问题的需求简单明确一下：
 
-*   假设我们现在有11个坐标点要标在一个脑图上，脑图的图像大小是91x109x91；这里各个体素的坐标不是MNI或Talairach坐标，而是在图像矩阵中的体素位置（这个坐标可以与MNI坐标相互转换）。所有体素的坐标已写在一个csv文本[文件][data_csv]里（格式为x,y,z）。
+*   假设我们现在有11个坐标点要标在一个脑图上，脑图的图像大小是91x109x91；这里各个体素的坐标不是MNI或Talairach坐标，而是在图像矩阵中的体素位置（这个坐标可以与MNI坐标相互转换）。所有体素的坐标已写在一个csv文本[文件][data_link]里（格式为x,y,z）。
 
 *   所有需要写入脑图的体素值都标为1.
 
@@ -88,5 +88,5 @@ published: true
 [anaconda_home]: https://store.continuum.io/cshop/anaconda "Anaconda Scientific Python Distribution"
 [nibabel_github]: https://github.com/nipy/nibabel "Github of NiBabel"
 [52brain_quest]: http://home.52brain.com/thread-26263-1-1.html "什么软件可以把体素在大脑的具体位置上标出来"
-[data_csv] https://github.com/sealhuang/python-tutorial/blob/master/data/voxel_coord.csv "Data"
-[freeroi_dowload] http://sourceforge.net/projects/freeroi/files/FreeROI-0.2.2/freeroi-win-0.2.2.zip/download "Download FreeROI"
+[data_link]: https://raw.githubusercontent.com/sealhuang/python-tutorial/master/data/voxel_coord.csv  "Data"
+[freeroi_dowload]: http://sourceforge.net/projects/freeroi/files/FreeROI-0.2.2/freeroi-win-0.2.2.zip/download "Download FreeROI"
