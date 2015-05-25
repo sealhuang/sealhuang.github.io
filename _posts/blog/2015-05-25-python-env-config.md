@@ -89,4 +89,4 @@ published: true
 [nibabel_github]: https://github.com/nipy/nibabel "Github of NiBabel"
 [52brain_quest]: http://home.52brain.com/thread-26263-1-1.html "什么软件可以把体素在大脑的具体位置上标出来"
 [data_link]: https://raw.githubusercontent.com/sealhuang/python-tutorial/master/data/voxel_coord.csv  "Data"
-[freeroi_dowload]: http://sourceforge.net/projects/freeroi/files/FreeROI-0.2.2/freeroi-win-0.2.2.zip/download "Download FreeROI"
+[freeroi_download]: http://sourceforge.net/projects/freeroi/files/FreeROI-0.2.2/freeroi-win-0.2.2.zip/download "Download FreeROI"
