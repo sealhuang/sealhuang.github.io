@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 多重比较校正中的一些概念
-category: project
+category: pro
 description: 多重比较矫正的相关概念和方法,以及其在 fMRI 数据分析中的应用。
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Stepwise regression 学习笔记
-category: project
+category: pro
 description: SPSS 中与 Regression 同时出现的方法。
 ---
 

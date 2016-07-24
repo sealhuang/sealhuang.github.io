@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 快速创建一个易用的Python环境
-category: blog
+category: technique
 description: 如何快速搭建Python环境，以及一个简单但实用的应用
 published: true
 ---

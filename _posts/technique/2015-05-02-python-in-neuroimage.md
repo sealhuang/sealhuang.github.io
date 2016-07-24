@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Python在脑成像数据分析中的应用
-category: blog
+category: technique
 description: 开篇：你为什么需要Python，以及一些实用的Python工具包
 published: true
 ---

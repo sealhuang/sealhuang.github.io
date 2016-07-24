@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Object and face perception
-category: project
+category: pro
 description: Review for object recogtion.
 ---
 

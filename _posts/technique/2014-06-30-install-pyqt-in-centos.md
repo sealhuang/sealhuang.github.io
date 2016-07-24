@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 如何在CentOs上安装PyQt
-category: project
+category: pro
 description: CentOS 5.X系统默认使用的Qt版本较低，如何选择合适的PyQt版本。
 ---
 

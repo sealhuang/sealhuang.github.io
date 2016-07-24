@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 非参 permutation test 中需要注意的问题
-category: project
+category: pro
 description: 在使用非参 permutation test 时遇到的问题和例子。
 ---
 
