@@ -10,11 +10,11 @@ published: true
 
 ## PDFMiner
 
-在Python生态下，一般会用 [pdfminer][pdfminer_github]（现在的全名叫做pdfminer.six）来读取PDF文件的内容，很多其它package也都会封装pdfminer作为软件的底层，提供更多方便的上层接口。尽管这个包应用很广泛，但对整个package深入介绍的文档却比较少，自己搜到一些资料，整理如下。
+在Python生态下，一般会用 [PDFMiner][pdfminer_github]（现在的全名叫做pdfminer.six）来读取PDF文件的内容，很多其它package也都会封装pdfminer作为软件的底层，提供更多方便的上层接口。尽管这个包应用很广泛，但对整个package深入介绍的文档却比较少，自己搜到一些资料，整理如下。
 
-有人说“PDF is evil.”因为PDF文档里的内容并不像word或html里的文档内容，有严格的行、段落等标记。你可以把PDF文件里的内容看成是一个个字符，以及记录每个字符该在哪个位置的集合（有点类似于图片，比如两个相连的字，你觉得他们是一个连续的词，而pdf实际只记录了两个单独的字，以及他们各自的坐标）。这就是为什么从pdf文件里读取文本，经常会出现杂乱的结构的原因。
+有人说“**PDF is evil.**”因为PDF文档里的内容并不像word或html里的文档内容，有严格的行、段落等标记。你可以把PDF文件里的内容看成是一个个字符，以及记录每个字符该在哪个位置的集合（有点类似于图片，比如两个相连的字，你觉得他们是一个连续的词，而pdf实际只记录了两个单独的字，以及他们各自的坐标）。这就是为什么从pdf文件里读取文本，经常会出现杂乱的结构的原因。
 
-pdfminer的功能则可以粗略归结为两点：
+PDFMiner的功能则可以粗略归结为两点：
 
 * 从pdf文件里读出里面的字符以及每个字符的位置；
 
@@ -22,7 +22,7 @@ pdfminer的功能则可以粗略归结为两点：
 
 ## PDFMiner是如何工作的
 
-为了实现以上功能，pdfminer中实现了一系列类：PDFParser和PDFDocument（这两个类紧密相连，PDFParser用来从pdf文件里读取数据，PDFDocument用来存储这些数据），PDFPageInterpreter（用来处理每页的内容），PDFDevice（用来将pdf中的信息转化成你需要的特定格式），以及PDFResourceManager（用于保存文件中一些共享的资源，如字体和图片等）。
+为了实现以上功能，PDFMiner中实现了一系列类：`PDFParser`和`PDFDocument`（这两个类紧密相连，`PDFParser`用来从pdf文件里读取数据，`PDFDocument`用来存储这些数据），`PDFPageInterpreter`（用来处理每页的内容），`PDFDevice`（用来将pdf中的信息转化成你需要的特定格式），以及`PDFResourceManager`（用于保存文件中一些共享的资源，如字体和图片等）。
 
 下图描绘了这些类的功能关系。
 
@@ -80,21 +80,21 @@ pdfminer的功能则可以粗略归结为两点：
             if isinstance(obj, pdfminer.layout.LTTextBoxHorizontal):
                 print(obj.get_text())
 
-上面这段代码中涉及PDFPageAggregator的部分，下面会介绍。
+上面这段代码中涉及`PDFPageAggregator`的部分，下面会介绍。
 
-由于pdf文件里的文本往往缺少对于行、段落等结构的描述，所以pdfminer要根据一些规则，自己来完成这个“组合”的工作，这就依赖于PDFPageAggregator和LAParams两个类，通过他们的处理，每页的内容（文本结构-layout）会以一个树形结构保存下来。
+由于pdf文件里的文本往往缺少对于行、段落等结构的描述，所以PDFMiner要根据一些规则，自己来完成这个“组合”的工作，这就依赖于`PDFPageAggregator`和`LAParams`两个类，通过他们的处理，每页的内容（文本结构-layout）会以一个树形结构保存下来。
 
 ![Layout objects and its tree structure](/images/pdfminer/layout.png)
 
-这个树形结构以“页”为单位，最上层是LTPage，它下面可以包含LTTextBox，LTFigure，LTImage，LTRect，LTCurve和LTLine等不同类。
+这个树形结构以“页”为单位，最上层是LTPage，它下面可以包含`LTTextBox`，`LTFigure`，`LTImage`，`LTRect`，`LTCurve`和`LTLine`等不同类。
 
-* LTTextBox表示一组包含在一个矩形区域的文本，需要注意的是，这组文本只是根据“空间关系”聚合在一起的，并不表示它们之间存在语义的逻辑关系（后面会介绍如何聚合文本）。LTTextBox下会包含一个LTTextLine的list。
+* `LTTextBox`表示一组包含在一个矩形区域的文本，需要注意的是，这组文本只是根据“空间关系”聚合在一起的，并不表示它们之间存在语义的逻辑关系（后面会介绍如何聚合文本）。`LTTextBox`下会包含一个`LTTextLine`的list。
 
-* LTTextLine表示一个文本行，它是由一系列LTChar组成的，LTChar表示一个字符。
+* `LTTextLine`表示一个文本行，它是由一系列`LTChar`组成的，`LTChar`表示一个字符。
 
-* LTFigure表示pdf文件中的一个内嵌区域，它里面可以包含线条、文本或图片，是一个嵌套的结构。
+* `LTFigure`表示pdf文件中的一个内嵌区域，它里面可以包含线条、文本或图片，是一个嵌套的结构。
 
-* LTImage表示插入的图片。
+* `LTImage`表示插入的图片。
 
 更多类别的介绍可以查询官方文档。
 
@@ -102,7 +102,7 @@ pdfminer的功能则可以粗略归结为两点：
 
 ## PDFMiner是如何对文本进行组合的
 
-pdfminer是基于字符的位置进行文本组合的，大致按照如下的顺序：首先根据两个字符的空间位置来判断它们是否应该连接成一个文本行；在此基础上，再根据行与行之间的间隔，来判断他们是否可以组成一个文本段；最后，再根据每个文本段的空间位置，基于行优先或列优先（或介于两者之间的一种规则）输出文本，实现将pdf文件的内容转成文本内容。这部分内容在官方文档中介绍得比较清楚。
+PDFMiner是基于字符的位置进行文本组合的，大致按照如下的顺序：首先根据两个字符的空间位置来判断它们是否应该连接成一个文本行；在此基础上，再根据行与行之间的间隔，来判断他们是否可以组成一个文本段；最后，再根据每个文本段的空间位置，基于行优先或列优先（或介于两者之间的一种规则）输出文本，实现将pdf文件的内容转成文本内容。这部分内容在官方文档中介绍得比较清楚。
 
 在实际使用中，由于PDF文档自身的排版结构多种多样，所以往往需要使用者根据文档结构设置文本聚合的方法，具体可以设置`LAParams`的各个参数，并根据导出文本的坐标位置进行二次组合。具体可以参考pdfminer的[官方教程][pdfminer.six's documentation]。
 
