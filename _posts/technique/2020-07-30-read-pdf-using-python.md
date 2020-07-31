@@ -8,7 +8,7 @@ published: true
 
 ## PDFMiner
 
-![topic](/images/ipdfminer/topic.png)
+![topic](/images/ipdfminer/topic.jpg)
 
 在Python生态下，一般会用 [pdfminer][pdfminer_github]（现在的全名叫做pdfminer.six）来读取PDF文件的内容，很多其它package也都会封装pdfminer作为软件的底层，提供更多方便的上层接口。尽管这个包应用很广泛，但对整个package深入介绍的文档却比较少，自己搜到一些资料，整理如下。
 
@@ -26,7 +26,7 @@ pdfminer的功能则可以粗略归结为两点：
 
 下图描绘了这些类的功能关系。
 
-![Relationships between PDFMiner classes](/images/ipdfminer/objrel.png)
+![Relationships between PDFMiner classes](/images/pdfminer/objrel.png)
 
 一段代码示例：
 
@@ -106,7 +106,10 @@ pdfminer是基于字符的位置进行文本组合的，大致按照如下的顺
 
 在实际使用中，由于PDF文档自身的排版结构多种多样，所以往往需要使用者根据文档结构设置文本聚合的方法，具体可以设置`LAParams`的各个参数，并根据导出文本的坐标位置进行二次组合。具体可以参考pdfminer的[官方教程][pdfminer.six's documentation]。
 
-注：本文章内的部分内容和图片来自于[Programming with PDFMiner][https://www.unixuser.org/~euske/python/pdfminer/programming.html].
+注：本文章内的部分内容和图片来自于[Programming with PDFMiner][programming_with_pdfminer].
+
 
 [pdfminer_github]: https://github.com/pdfminer/pdfminer.six
 [pdfminer.six's documentation]: [https://pdfminersix.readthedocs.io/en/latest/]
+[programming_with_pdfminer]: [https://www.unixuser.org/~euske/python/pdfminer/programming.html]
+
