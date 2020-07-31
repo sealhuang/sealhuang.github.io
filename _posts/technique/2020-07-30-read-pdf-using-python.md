@@ -6,9 +6,9 @@ description: 做数据分析难免要从PDF文件里读取一些文字或数据�
 published: true
 ---
 
-## PDFMiner
-
 ![topic](/images/ipdfminer/topic.jpg)
+
+## PDFMiner
 
 在Python生态下，一般会用 [pdfminer][pdfminer_github]（现在的全名叫做pdfminer.six）来读取PDF文件的内容，很多其它package也都会封装pdfminer作为软件的底层，提供更多方便的上层接口。尽管这个包应用很广泛，但对整个package深入介绍的文档却比较少，自己搜到一些资料，整理如下。
 
