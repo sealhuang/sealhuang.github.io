@@ -6,7 +6,7 @@ description: 做数据分析难免要从PDF文件里读取一些文字或数据�
 published: true
 ---
 
-![topic](/images/ipdfminer/topic.jpg)
+![topic](/images/pdfminer/topic.jpg)
 
 ## PDFMiner
 
@@ -110,6 +110,6 @@ pdfminer是基于字符的位置进行文本组合的，大致按照如下的顺
 
 
 [pdfminer_github]: https://github.com/pdfminer/pdfminer.six
-[pdfminer.six's documentation]: [https://pdfminersix.readthedocs.io/en/latest/]
-[programming_with_pdfminer]: [https://www.unixuser.org/~euske/python/pdfminer/programming.html]
+[pdfminer.six's documentation]: https://pdfminersix.readthedocs.io/en/latest/
+[programming_with_pdfminer]: https://www.unixuser.org/~euske/python/pdfminer/programming.html
 
