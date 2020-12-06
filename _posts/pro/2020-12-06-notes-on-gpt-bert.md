@@ -43,7 +43,7 @@ description: Two successors of Transformer
 
   AFAICT, this has to do with the fact that the task asked of the model is "predict the next word in the sequence", not "predict the next word in the sequence given all of the words that come both before and after it".
 
-> “Everybody knows bidirectional conditioning would allow each word to indirectly see itself in a multi-layered context.”
+  > “Everybody knows bidirectional conditioning would allow each word to indirectly see itself in a multi-layered context.”
 
   ELMO has access to both prior and posterior information. However, it uses a bidirectional LSTM, which is a weaker context transfer learner (given a sufficiently long sequence) than self-attention is. This is a sort of implicit regularization built into ELMO that BERT, with its over-eager learner, doesn't have.
 
