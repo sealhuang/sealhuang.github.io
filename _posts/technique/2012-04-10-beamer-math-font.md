@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 在 Beamer 中如何使用标准数学字体
-category: pro
+category: technique
 description: Latex 有时也是相当折腾人。
 ---
 
