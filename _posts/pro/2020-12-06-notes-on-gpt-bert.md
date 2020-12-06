@@ -45,9 +45,9 @@ description: Two successors of Transformer
 
 > “Everybody knows bidirectional conditioning would allow each word to indirectly see itself in a multi-layered context.”
 
-ELMO has access to both prior and posterior information. However, it uses a bidirectional LSTM, which is a weaker context transfer learner (given a sufficiently long sequence) than self-attention is. This is a sort of implicit regularization built into ELMO that BERT, with its over-eager learner, doesn't have.
+  ELMO has access to both prior and posterior information. However, it uses a bidirectional LSTM, which is a weaker context transfer learner (given a sufficiently long sequence) than self-attention is. This is a sort of implicit regularization built into ELMO that BERT, with its over-eager learner, doesn't have.
 
-BERT gets around this by modifying the task. Whereas GPT-2 learns on the "predict next" task directly, BERT learns on the task "learn the word in a sentence in which 15% of the words are masked out". The masking is a form of regularization; it withholds just enough at preventing the algorithm from cheating through rote memorization. It will also rarely replace a word with a different (probably wrong) word (basically reverse teacher forcing?).
+  BERT gets around this by modifying the task. Whereas GPT-2 learns on the "predict next" task directly, BERT learns on the task "learn the word in a sentence in which 15% of the words are masked out". The masking is a form of regularization; it withholds just enough at preventing the algorithm from cheating through rote memorization. It will also rarely replace a word with a different (probably wrong) word (basically reverse teacher forcing?).
 
 * To make BERT better about generalizing to two-sentence tasks (e.g. compare two sentences semantically, is this sentence likely to follow this other one, etcetera) BERT also recieves training on a "is this sentence likely to follow this other one?" task. For this training task the sentence input is formatted like so: [CLS] ...sentence1 [SEP] ...sentence2 [SEP]. The output result is softmax on the first input value to the model. In fact! Every sentence inputted to BERT starts with the [CLS] token for precisely this reason.
 
