@@ -41,7 +41,7 @@ description: Two successors of Transformer
 
 * The transformer decoder is a natural fit for the word embedding learning task because it works backwards only: e.g. the token at a certain position in the sentence only has access to the previous tokens. This is considered a good thing because it's been shown, in practice, that a sufficiently complex network that naively includes the context of the posterior sequence of words in determining a word suffers from **target leakage** (see ["Leakage, especially knowledge leakage"][knowledge_leakage]).
 
-AFAICT, this has to do with the fact that the task asked of the model is "predict the next word in the sequence", not "predict the next word in the sequence given all of the words that come both before and after it".
+  AFAICT, this has to do with the fact that the task asked of the model is "predict the next word in the sequence", not "predict the next word in the sequence given all of the words that come both before and after it".
 
 > “Everybody knows bidirectional conditioning would allow each word to indirectly see itself in a multi-layered context.”
 
@@ -53,7 +53,7 @@ BERT gets around this by modifying the task. Whereas GPT-2 learns on the "predic
 
 
 [orig_url]: https://www.kaggle.com/residentmario/notes-on-gpt-2-and-bert-models
-[word_enbedding_notes]: https://www.kaggle.com/residentmario/notes-on-word-embedding-algorithms/
+[word_embedding_notes]: https://www.kaggle.com/residentmario/notes-on-word-embedding-algorithms/
 [transformer_url]: https://www.kaggle.com/residentmario/transformer-architecture-self-attention
 [BPE_wiki]: https://en.wikipedia.org/wiki/Byte_pair_encoding
 [knowledge_leakage]: https://www.kaggle.com/residentmario/leakage-especially-knowledge-leakage
