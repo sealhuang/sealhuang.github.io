@@ -34,11 +34,19 @@ published: true
 具体地，我们首先进入保存压缩包的目录，并将文件解压：
 
     cd ~/volume-backup
-    tar zxvf volume.tgz
+    sudo tar zxvf volume.tgz
+
+在解压时，使用root权限是为了保留被压缩文件的ownership，如果不需要保留文件所属关系，可以不使用root权限。
 
 之后，我们可以使用以下命令来导入名为`#volume-name#`的数据文件
 
-    docker run --rm -it -v /var/lib/docker:/docker -v ~/volume-backup/docker/volumes:/volume-backup busybox cp -r /volume-backup/#volume-name# /docker/volumes
+    docker run --rm -it -v /var/lib/docker:/docker -v ~/volume-backup/docker/volumes:/volume-backup busybox cp -rp /volume-backup/#volume-name# /docker/volumes
+
+复制文件时，使用`p`参数是为了在复制时保存文件的从属关系和权限等。
+
+最后，为了能够真正完成data volume的迁移，我们还需要重新创建名为`#volume-name#`的volume，
+
+    docker volume create #volume-name#
 
 至此，数据迁移完成。
 
