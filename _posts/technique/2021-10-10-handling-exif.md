@@ -96,5 +96,11 @@ published: true
 为了克服这一情况，让照片可以真实的反应人们拍摄时看到的场景，现在很多相机中就加入了方向传感器，它能够记录下拍摄时相机的方向，并将这一信息保存在照片中。照片的存储方式还是没有任何改变，它仍然是以相机的坐标系来保存，只是当相机来浏览这些照片时，相机可以根据照片中的方向信息，结合此时相机的方向，对照片进行旋转，从而转到适合人们观看的角度。
 
 
+**注**
+
+本文部分内容摘抄自[如何处理iOS中照片的方向][quote_url]。
+
 
 [exif_transpose_source]: https://pillow.readthedocs.io/en/latest/_modules/PIL/ImageOps.html#exif_transpose
+[quote_url]: https://feihu.me/blog/2015/how-to-handle-image-orientation-on-iOS/
+
