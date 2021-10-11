@@ -10,17 +10,17 @@ published: true
 
 最近开发了一个人脸**个性**信息提取的小应用，中间利用到了人脸检测等模型；想到系统在线下测试中表现还不错，就找了几个朋友试玩体验一下，谁知好几个人和我说，自己的自拍照上传完没有任何反馈，是不是出了什么问题？
 
-我赶紧做了检查，发现出问题的图片都来源于手机自拍，同时程序在读取图片数据后，获取的图像高宽数值正好颠倒过来（如一张照片的高宽为700X350，程序读取出来成了350X700），隐约感觉问题可能出在了这个地方。想到我的人脸检测模块都是用正立面孔做的训练（没有加rotation等augmentation），如果输入图像的人脸旋转了90/270度，其结果不好倒是可以预期了。
+我赶紧做了检查，发现出问题的图片都来源于手机自拍，同时程序在读取图片数据后，获取的图像高宽数值正好颠倒过来（如一张照片的高宽为`700 X 350`，程序读取出来成了`350 X 700`），隐约感觉问题可能出在了这个地方。想到我的人脸检测模块都是用正立面孔做的训练（没有加rotation等augmentation），如果输入图像的人脸旋转了90/270度，其结果不好倒是可以预期了。
 
-有了这个方向，便开始搜索相关的信息，终于找到了问题的根源：相机的EXIF信息。
+有了这个方向，便开始搜索相关的信息，终于找到了问题的根源：相机的`EXIF`信息。
 
 ## EXIF信息是什么
 
 > 可交换图像文件格式常被简称为EXIF（Exchangeable Image File Format），是专门为数码相机的照片设定的，可以记录数码照片的属性信息和拍摄数据... EXIF可以附加于JPEG、TIFF、RIFF等文件之中。
 
-![相机的旋转方向](/images/handling_exif/handling_exif)
+![相机的旋转方向](/images/handling_exif/orientation.png)
 
-在EXIF涵盖的各种信息之中，其中有一个叫做Orientation (rotation)的标签，用于记录图像的方向，这便是相机写入方向信息的最终位置。它总共定义了八个值：
+在`EXIF`涵盖的各种信息之中，其中有一个叫做`Orientation`的标签，用于记录图像的方向，这便是相机写入方向信息的最终位置。它总共定义了八个值：
 
 ![Orientation定义](/images/handling_exif/orientation-eight-values.png)
 
@@ -56,7 +56,7 @@ published: true
 
 ### 如何用Python的PIL包解决这个问题
 
-在*Pillow*的`6.0.0`及之后的版本里，已经有一个现成的工具帮助用户根据`EXIF`的`Orientation`信息旋转图像，使用很简单：
+在`Pillow>=6.0.0`的版本里，已经有一个现成的工具帮助用户根据`EXIF`的`Orientation`信息旋转图像，使用很简单：
 
     from PIL import ImageOps
     image = ImageOps.exif_transpose(image)
@@ -96,9 +96,7 @@ published: true
 为了克服这一情况，让照片可以真实的反应人们拍摄时看到的场景，现在很多相机中就加入了方向传感器，它能够记录下拍摄时相机的方向，并将这一信息保存在照片中。照片的存储方式还是没有任何改变，它仍然是以相机的坐标系来保存，只是当相机来浏览这些照片时，相机可以根据照片中的方向信息，结合此时相机的方向，对照片进行旋转，从而转到适合人们观看的角度。
 
 
-**注**
-
-本文部分内容摘抄自[如何处理iOS中照片的方向][quote_url]。
+**注：**本文部分内容摘抄自[如何处理iOS中照片的方向][quote_url]。
 
 
 [exif_transpose_source]: https://pillow.readthedocs.io/en/latest/_modules/PIL/ImageOps.html#exif_transpose
